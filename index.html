@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralMath FX | Professional Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-card">
+        <header>
+            <h3>NeuralMath <span class="badge">FX-991</span></h3>
+            <p>High-Performance Logic Engine</p>
+        </header>
+        
+        <input type="text" id="display" readonly placeholder="0">
+
+        <div class="keypad">
+            <button class="btn-sci" onclick="push('Math.PI')">π</button>
+            <button class="btn-sci" onclick="push('Math.E')">e</button>
+            <button class="btn-sci" onclick="factorial()">x!</button>
+            <button class="btn-sci" onclick="push('Math.exp(')">exp</button>
+
+            <button class="btn-sci" onclick="push('Math.sin(')">sin</button>
+            <button class="btn-sci" onclick="push('Math.cos(')">cos</button>
+            <button class="btn-sci" onclick="push('Math.tan(')">tan</button>
+            <button class="btn-danger" onclick="clearDisplay()">AC</button>
+            
+            <button class="btn-sci" onclick="push('Math.sqrt(')">√</button>
+            <button class="btn-sci" onclick="push('Math.log(')">ln</button>
+            <button class="btn-sci" onclick="push('Math.log10(')">log</button>
+            <button class="btn-danger" onclick="backspace()">DEL</button>
+
+            <button class="btn-sci" onclick="push('**2')">x²</button>
+            <button class="btn-sci" onclick="push('**')">xʸ</button>
+            <button class="btn-sci" onclick="push('(')">(</button>
+            <button class="btn-sci" onclick="push(')')">)</button>
+
+            <button class="btn-num" onclick="push('7')">7</button>
+            <button class="btn-num" onclick="push('8')">8</button>
+            <button class="btn-num" onclick="push('9')">9</button>
+            <button class="btn-op" onclick="push('/')">÷</button>
+
+            <button class="btn-num" onclick="push('4')">4</button>
+            <button class="btn-num" onclick="push('5')">5</button>
+            <button class="btn-num" onclick="push('6')">6</button>
+            <button class="btn-op" onclick="push('*')">×</button>
+
+            <button class="btn-num" onclick="push('1')">1</button>
+            <button class="btn-num" onclick="push('2')">2</button>
+            <button class="btn-num" onclick="push('3')">3</button>
+            <button class="btn-op" onclick="push('-')">-</button>
+
+            <button class="btn-num" onclick="push('0')">0</button>
+            <button class="btn-num" onclick="push('.')">.</button>
+            <button class="btn-eq" onclick="calculate()">=</button>
+            <button class="btn-op" onclick="push('+')">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
